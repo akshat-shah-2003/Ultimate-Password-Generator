@@ -9,10 +9,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.widget import Widget
 from kivy.core.window import Window
 from kivy.logger import Logger
-import sys
-sys.setrecursionlimit(1500)
-Logger.info("This is an info message")
-Logger.warning("This is a warning message")
+
 class MyWidget(Widget):
     input1 = TextInput(multiline=False, size_hint=(None,None), size=(500,50), pos=(300,500), hint_text="Enter Keyword for Password", font_size=30)
     input2 = TextInput(multiline=True, size_hint=(None,None), size=(500,50), pos=(300,400), font_size=30, disabled=True)
